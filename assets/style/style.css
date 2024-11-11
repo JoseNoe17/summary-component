@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+.main-sumary{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.general-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 700px;
+    height: 50vh;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.result-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    background: linear-gradient(0deg,hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
+    border-radius: 15px;
+    
+}
+
+.title-result{
+    margin-top: 20px;
+    font-size: 2.0rem;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+
+.result-stats{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 40%;
+    width: 50%;
+    background:linear-gradient(0deg,  hsla(241, 72%, 46%, 0),hsla(256, 72%, 46%, 1)); 
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.current-point{
+    color: white;
+    font-size: 4.0rem;
+    font-weight: bold;
+}
+
+.posible-points{
+    color: hsl(241, 100%, 89%);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.result-clasification{
+    color: white;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.result-text{
+    color: hsl(241, 100%, 89%);
+    font-size: 1.4rem;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.sumary-section{
+    display: flex;
+    width: 50vw;
+    background-color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding-right: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+
+}
+
+.sumary-title{
+    margin-top: 20px;
+    font-size: 2.0rem;
+    color: hsl(224, 30%, 27%);
+    font-weight: 500;
+}
+
+.sumary-stats{
+    margin-top: 20px;
+}
+
+.sumary-stats-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.sumary-reaction, .sumary-memory, .sumary-verbal, .sumary-visual{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sumary-memory{
+    background-color: hsl(39, 100%, 56%, 0.195);
+}
+
+.sumary-verbal{
+    background-color: hsl(166, 100%, 37%,0.195);
+}
+
+.sumary-visual{
+    background-color: hsla(234, 85%, 45%, 0.195);
+}
+
+.sumary-reaction{
+    background-color: hsla(0, 100%, 67%, 0.195);
+}
+
+
+.sumary-stats-row-img{
+    display: flex;
+}
+
+.sumary-reaction-text, .sumary-memory-text, .sumary-verbal-text, .sumary-visual-text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-left: 10px;
+    
+}
+.sumary-reaction-text{
+    color:hsl(0, 100%, 67%);
+}
+
+.sumary-memory-text{
+   color: hsl(39, 100%, 56%);
+}
+
+.sumary-verbal-text{
+   color: hsl(166, 100%, 37%);
+}
+.sumary-visual-text{
+   color: hsl(234, 85%, 45%);
+}
+
+.points p, .points span{
+    font-size: 1.4rem;
+}
+
+.points span{
+    color: hsl(241, 100%, 89%);
+    font-weight: 300;
+}
+
+.continue-button{
+    margin-top: 30px;
+    border: none;
+    height: 50px;
+    font-size: 1.4rem;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: bold;
+}
+
+.continue-button:active{
+    background: linear-gradient(0deg,hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1050px){
+    .general-section {
+
+    width: 90%;
+    height: 40%;
+    }
+
+    .title-result, .sumary-title {
+        font-size: 1.8rem;
+    }
+
+    .sumary-stats{
+        margin-bottom: 20px;
+    }
+
+    .result-stats{
+        height: 200px;
+        width: 200px;
+    }
+    
+
+
+}
+@media (max-width: 768px) {
+    .general-section {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .result-section,
+    .sumary-section {
+        width: 100%;
+    }
+
+    .title-result, .sumary-title {
+        font-size: 1.8rem;
+    }
+
+    .result-stats {
+        height: 120px;
+        width: 120px;
+    }
+
+    .current-point {
+        font-size: 3rem;
+    }
+
+    .posible-points, .result-clasification, .sumary-reaction-text, .sumary-memory-text, .sumary-verbal-text, .sumary-visual-text, .points p {
+        font-size: 1.2rem;
+    }
+    .result-clasification{
+        font-size: 24px;
+    }
+    .result-text {
+        font-size: 1.2rem;
+        padding: 0 15px;
+        margin-bottom: 24px;
+    }
+
+    .continue-button {
+        font-size: 1.2rem;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-result, .sumary-title {
+        font-size: 1.6rem;
+    }
+
+    .result-stats {
+        height: 150px;
+        width: 150px;
+    }
+
+    .current-point {
+        font-size: 3.2rem;
+    }
+
+    .result-text {
+        font-size: 1rem;
+    }
+
+    .continue-button {
+        font-size: 1rem;
+    }
+}
